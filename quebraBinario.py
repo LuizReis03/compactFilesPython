@@ -6,15 +6,15 @@ This is a temporary script file.
 """
 
 def quebraBinario(valor):
-    listaBit = []
-    for i in valor:
-        if len(listaBit) < 8:
-            listaBit.append(i)
-    return listaBit
+    converte = int(valor)
+    listaBinario = []
+    listaQuebrada = []
+    listaBinario.append(converte)
+    
+    for i in range(len(listaBinario)):
+        if len(listaBinario) == 8:
+            listaQuebrada.append(i)
+    print(listaQuebrada)
             
-        
-    
-    
-    
-arquivo = [0,0,0,0,0,0,1,1,0,1,0,0,0,1,0]
-print(quebraBinario(arquivo))
+
+quebraBinario('0001001101010')
